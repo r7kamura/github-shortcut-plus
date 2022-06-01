@@ -30,7 +30,3 @@ Browser extension to add more keyboard shortcuts to [github.com](https://github.
 Customize the keyboard shortcuts from options page.
 
 ![](images/screenshot.png)
-
-## Related project
-
-- <https://github.com/r7kamura/tweetdeck-shortcut-plus>
