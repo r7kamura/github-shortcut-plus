@@ -12,21 +12,8 @@ const keybindingsStorageKey = "keybindings";
 
 const categories = [
   {
-    categoryName: "Browse",
-    commandNames: [
-      "browseLinksInForeground",
-      "browseLinksInBackground",
-      "browseMediaInForeground",
-      "browseMediaInBackground",
-    ],
-  },
-  {
-    categoryName: "Select",
-    commandNames: ["selectAuthor", "selectQuotedTweet"],
-  },
-  {
-    categoryName: "Others",
-    commandNames: ["deleteTweet", "downloadMedia", "quote", "togglePinTweet"],
+    categoryName: "Issue / Pull Request",
+    commandNames: ["editIssueDescription", "focusNewCommentField"],
   },
 ];
 
