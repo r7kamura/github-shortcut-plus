@@ -10,6 +10,11 @@ const commands: Array<Command> = [
     description: "Edit issue description",
     name: "editIssueDescription",
   },
+  {
+    default: "alt+c",
+    description: "Focus new comment textarea",
+    name: "focusNewCommentField",
+  },
 ];
 
 export { commands };

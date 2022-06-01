@@ -12,6 +12,10 @@ export function editIssueDescription() {
   dropdownButton.click();
 }
 
+export function focusNewCommentField() {
+  findNewCommentField()?.focus();
+}
+
 function findIssueDropdownButton() {
   return (document.querySelector(
     '.js-command-palette-issue-body *[aria-haspopup="menu"]'
@@ -25,4 +29,8 @@ function findIssueCommentEditButton() {
   return document.querySelector(
     ".dropdown-menu .js-comment-edit-button"
   ) as HTMLElement | null;
+}
+
+function findNewCommentField() {
+  return document.querySelector("#new_comment_field") as HTMLElement | null;
 }

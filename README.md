@@ -7,6 +7,7 @@ Browser extension to add more keyboard shortcuts to [github.com](https://github.
 ## Keyboard shortcuts
 
 - Edit issue description (default: <kbd>Alt+E</kbd>)
+- Focus new comment field (default: <kbd>Alt+C</kbd>)
 
 ## Configuration
 
