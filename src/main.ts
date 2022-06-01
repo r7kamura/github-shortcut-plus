@@ -7,11 +7,7 @@ chrome.runtime.sendMessage(
   ({ keybindings }) => {
     const keyMap = generateKeyMap(keybindings);
     document.addEventListener("keydown", (event) => {
-      if (
-        document.activeElement?.getAttribute("contenteditable") == "true" ||
-        document.activeElement?.tagName == "INPUT" ||
-        document.activeElement?.tagName == "TEXTAREA"
-      ) {
+      if (activeOnEditableElement()) {
         return;
       }
 
@@ -25,3 +21,11 @@ chrome.runtime.sendMessage(
     });
   }
 );
+
+function activeOnEditableElement() {
+  return (
+    document.activeElement?.getAttribute("contenteditable") == "true" ||
+    document.activeElement?.tagName == "INPUT" ||
+    document.activeElement?.tagName == "TEXTAREA"
+  );
+}
