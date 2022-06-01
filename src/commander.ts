@@ -9,7 +9,7 @@ import {
   selectAuthor,
   selectQuotedTweet,
   togglePinTweet,
-} from "./twitter";
+} from "./github";
 
 const commandFunctionByName = {
   browseLinksInForeground,
