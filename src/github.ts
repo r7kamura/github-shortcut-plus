@@ -4,11 +4,12 @@ export function editIssueDescription() {
     return;
   }
 
-  dropdownButton.click();
-
-  setTimeout(() => {
+  const observer = new MutationObserver(() => {
+    observer.disconnect();
     findIssueCommentEditButton()?.click();
-  }, 400);
+  });
+  observer.observe(dropdownButton.parentElement!, { attributes: true });
+  dropdownButton.click();
 }
 
 function findIssueDropdownButton() {
