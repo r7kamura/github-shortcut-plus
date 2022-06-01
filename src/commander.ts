@@ -1,27 +1,7 @@
-import {
-  browseLinksInForeground,
-  browseLinksInBackground,
-  browseMediaInForeground,
-  browseMediaInBackground,
-  deleteTweet,
-  downloadMedia,
-  quote,
-  selectAuthor,
-  selectQuotedTweet,
-  togglePinTweet,
-} from "./github";
+import { editIssueDescription } from "./github";
 
 const commandFunctionByName = {
-  browseLinksInForeground,
-  browseLinksInBackground,
-  browseMediaInForeground,
-  browseMediaInBackground,
-  deleteTweet,
-  downloadMedia,
-  quote,
-  selectAuthor,
-  selectQuotedTweet,
-  togglePinTweet,
+  editIssueDescription,
 } as { [key: string]: Function };
 
 export function runCommands(commandNames: string[]) {
